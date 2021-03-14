@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>Web Storage</title>
+</head>
+
+<body>
+    <div>
+        <h1>LocalStorage</h1>
+        <form onsubmit="saveDataLocal(event)">
+            <label for="name">Name: </label>
+            <input type="text" name="name">
+            <label for="years">Years: </label>
+            <input type="number" name="years">
+            <input type="submit" value="Salvar informações">
+        </form>
+        <br>
+        <button onclick="getDataLocal()">
+            Recuperar informações
+        </button>
+        <button onclick="removeDataLocal()">
+            Remover informações
+        </button>
+        <p id="dataLocal"></p>
+    </div>
+    <div>
+        <h1>SessionStorage</h1>
+        <form onsubmit="saveDataSession(event)">
+            <label for="state">State</label>
+            <input type="text" name="state">
+            <label for="city">City</label>
+            <input type="text" name="city">
+            <input type="submit" value="Salvar informações">
+        </form>
+            <br>
+            <button onclick="getDataSession()">
+                Recuperar informações
+            </button>
+            <button onclick="removeDataSession()">
+                Remover informações
+            </button>
+            <p id="dataSession"></p>
+    </div>
+</body>
+
+</html>
